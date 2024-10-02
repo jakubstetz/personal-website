@@ -143,6 +143,10 @@ a:active {
   color: rgb(254, 77, 92);
 }
 
+span {
+  color: orange;
+}
+
 .underline {
   margin-top: 0.75rem;
   height: .25rem;
