@@ -39,19 +39,12 @@ header * { /* Ensure that header content shows up properly above color overlay. 
   column-gap: 5%;
 }
 
-#front-page-portrait-image-container {
+#intro-banner .image-container { /* Container for my headshot in the website header. */
   grid-column: 1 / 2;
   border-radius: 50%;
   border: .375rem solid hsl(195, 0%, 100%);
   min-width: 190px;
   max-width: 300px;
-  overflow: hidden;
-}
-
-#front-page-portrait-image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 #intro-text { /* Introductory text in website header. */

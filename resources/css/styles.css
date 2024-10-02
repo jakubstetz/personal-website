@@ -180,7 +180,7 @@ nav {
   gap: 30px;
 }
 
-header .image-container { /* Container for my headshot in the website header. */
+header>.image-container { /* Container for my headshot in the website header. */
   border-radius: 50%;
   border: .125rem solid hsl(195, 0%, 100%);
   width: 80px;
