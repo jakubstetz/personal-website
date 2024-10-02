@@ -151,7 +151,7 @@ a:active {
   background-color: hsl(148, 100%, 35%);
 }
 
-/*** Header and Navigation Bar ***/   /* !!! MANY ADJUSTMENTS MADE HERE !!! */
+/*** Header and Navigation Bar ***/
 
 header { /* Container for website title and navigation. */
   background-color: hsl(195, 0%, 5%);
@@ -182,7 +182,7 @@ header .image-container { /* Container for my headshot in the website header. */
   width: 80px;
 }
 
-/* Navigation */ /* !!! NOT SO MANY CHANGES HERE, THOSE THAT ARE HERE ARE SPECIFIED !!! */
+/* Navigation */
 
 nav p, nav a {
   text-transform: uppercase;

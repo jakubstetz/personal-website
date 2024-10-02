@@ -1,133 +1,3 @@
-/*** Load Cormorant Garamond Font Family ***/
-
-/* Unitalicized */
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Regular.ttf') format('truetype');
-  font-weight: normal; /* i.e. 400 */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Bold.ttf') format('truetype');
-  font-weight: bold; /* i.e. 700 */
-  font-style: normal;
-}
-
-/* Italicized */
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-Italic.ttf') format('truetype');
-  font-weight: normal; /* i.e. 400 */
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-MediumItalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Garamond';
-  src: url('../fonts/garamond/CormorantGaramond-BoldItalic.ttf') format('truetype');
-  font-weight: bold; /* i.e. 700 */
-  font-style: italic;
-}
-
-/*** Load Montserrat Font Family ***/
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-  font-style: italic;
-}
-
-/*** General Selectors ***/
-
-* {
-  font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
-  color: hsl(195, 0%, 100%);
-}
-
-html {
-  background-color: hsl(195, 0%, 15%);
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-p, li {
-  margin-top: 1.625rem;
-  line-height: 1.65;
-}
-
-a {
-  color: hsl(195, 99%, 65%);
-}
-
-a:hover {
-  color: hsl(195, 0%, 100%);
-}
-
-a:active {
-  color: rgb(254, 77, 92);
-}
-
-.underline {
-  margin-top: 0.75rem;
-  height: .25rem;
-  width: 120px;
-  border-radius: 2px;
-  background-color: hsl(148, 100%, 35%);
-}
-
 /*** Header ***/
 
 /* Header Background */
@@ -138,6 +8,8 @@ header {
   background-size: cover;
   display: flex;
   justify-content: center;
+  padding: 0;
+  gap: 0;
 }
 
 header:before { /* Color overlay over background image. */
@@ -167,12 +39,19 @@ header * { /* Ensure that header content shows up properly above color overlay. 
   column-gap: 5%;
 }
 
-#intro-banner .image-container { /* Container for my headshot in the website header. */
+#front-page-portrait-image-container {
   grid-column: 1 / 2;
   border-radius: 50%;
   border: .375rem solid hsl(195, 0%, 100%);
   min-width: 190px;
   max-width: 300px;
+  overflow: hidden;
+}
+
+#front-page-portrait-image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 #intro-text { /* Introductory text in website header. */
@@ -180,13 +59,12 @@ header * { /* Ensure that header content shows up properly above color overlay. 
 }
 
 h1 { /* Website title (my name) in the website header. */
-  font-family: Garamond, 'Times New Roman', serif;
   font-size: 3rem;
   border-bottom: hsl(195, 0%, 100%) solid .125rem;
   padding-bottom: .125rem;
   letter-spacing: .1875rem;
   font-weight: 550;
-  margin-bottom: 1.25rem
+  margin-bottom: 1.25rem;
 }
 
 #intro-banner ul { /* Container for my introductory descriptors in the website header. */
@@ -204,64 +82,10 @@ h1 { /* Website title (my name) in the website header. */
 
 nav { /* Container for navigation element to facilitate styling. */
   background-color: hsl(195, 0%, 5%);
-  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 160px;
 }
 
 nav p, nav a {
-  text-transform: uppercase;
-  text-decoration: none;
   margin: 1rem 0;
-  min-width: 100px;
-  text-align: center;
-  line-height: 1.0625rem;
-}
-
-nav a {
-  color: hsl(195, 0%, 100%);
-  font-size: 0.9375rem;
-  transition: font-size 0.5s, color 0.5s;
-}
-
-nav a:hover, nav p {
-  color: hsl(195, 99%, 65%);
-  font-size: 1.0625rem;
-}
-
-nav a:active {
-  color: rgb(254, 77, 92);
-  transition: color 0s;
-}
-
-nav p { /* Current page. */
-  cursor: default;
-  line-height: 1;
-}
-
-/*** Main ***/
-
-main, footer div {
-  max-width: 700px;
-  margin: auto;
-}
-
-main {
-  padding: 5rem 0;
-
-}
-
-/*** Footer ***/
-footer {
-  background-color: hsl(195, 0%, 8%);
-  padding: 4rem 0;
-}
-
-footer p {
-  margin-top: 0;
-  color: hsl(195, 0%, 60%);
-  font-size: .75rem;
-  line-height: 1.8;
-  max-width: 400px;
 }
