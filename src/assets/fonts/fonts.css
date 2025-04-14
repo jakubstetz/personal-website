@@ -1,0 +1,89 @@
+/*** Load Cormorant Garamond Font Family ***/
+
+/* Unitalicized */
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: normal; /* i.e. 400 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-weight: bold; /* i.e. 700 */
+  font-style: normal;
+}
+
+/* Italicized */
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-Italic.ttf') format('truetype');
+  font-weight: normal; /* i.e. 400 */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Garamond';
+  src: url('./garamond/CormorantGaramond-BoldItalic.ttf') format('truetype');
+  font-weight: bold; /* i.e. 700 */
+  font-style: italic;
+}
+
+/*** Load Montserrat Font Family ***/
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
+}

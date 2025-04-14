@@ -2,9 +2,10 @@
 
 /* Header Background */
 
-header {
+header { /* Note that background image is applied in HeroBanner.jsx */
   position: relative;
-  background: url("../images/cover-image.jpg") center center no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
