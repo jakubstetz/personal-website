@@ -1,10 +1,11 @@
 import "./PortraitContainer.css";
 import portrait from '../../assets/images/portrait.jpg'
 
+/*<img src={portrait} />*/
+
 function PortraitContainer() {
   return (
-    <div className="image-container">
-      <img src={portrait} />
+    <div id="portrait-container" className="image-container">
     </div>
   );
 }

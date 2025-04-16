@@ -2,3 +2,50 @@
   font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
   background-color: white
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#front-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-banner {
+  display: flex;
+  gap: 40px;
+  background-color: #f8f8f8; /* very light gray */
+  padding: 40px;
+  border-radius: 10px;
+  height: 60%;
+  width: 70%;
+}
+
+#portrait-container {
+  background-color: #eaeaea; /* light gray */
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#banner-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #cccccc; /* medium gray */
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#button-container {
+  background-color: #bbbbbb; /* darker gray */
+  height: 20%;
+  border-radius: 5px;
+}
