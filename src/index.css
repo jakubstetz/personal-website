@@ -32,6 +32,16 @@ html, body {
   max-width: 300px;
 }
 
+h1 {/* Website title (my name) in the website header. */
+  font-size: 3rem;
+  border-bottom: black solid .125rem;
+  padding-bottom: .125rem;
+  letter-spacing: .1875rem;
+  font-weight: 550;
+  margin-bottom: 1.25rem;
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
 #banner-text-container {
   display: flex;
   flex-direction: column;
