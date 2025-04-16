@@ -1,6 +1,6 @@
 function Button({text, icon, external}) {
   return (
-    <button>
+    <button className='shadow'>
       {text}
     </button>
   );

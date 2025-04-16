@@ -24,27 +24,28 @@ div {
 
 #hero-banner {
   display: flex;
-  gap: 40px;
-  padding: 40px;
-  border-radius: 10px;
+  gap: 50px;
+  padding: 50px;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 #hero-banner .image-container { /* Container for my headshot in the website header. */
   border-radius: 50%;
-  min-width: 280px;
-  max-width: 300px;
+  min-width: 220px;
+  max-width: 250px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
 }
 
 #banner-text-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 570px;
-  border-radius: 10px;
-  padding: 20px;
-  min-width: 540px; /* Ensures text doesn't break into three lines. */
+  max-width: 540px;
+  border-radius: 20px;
+  min-width: 520px; /* Ensures text doesn't break into three lines. */
 }
 
 h1 {/* Website title (my name) in the website header. */
@@ -57,7 +58,7 @@ h1 {/* Website title (my name) in the website header. */
 }
 
 #intro-text {
-  margin: 25px 15px;
+  margin: 25px 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
