@@ -53,8 +53,8 @@ h1 {/* Website title (my name) in the website header. */
   font-size: 3rem;
   border-bottom: black solid .125rem;
   padding-bottom: .125rem;
-  letter-spacing: .1875rem;
-  font-weight: 600;
+  letter-spacing: .125rem;
+  font-weight: 500;
   font-family: Garamond, 'Times New Roman', serif;
 }
 
