@@ -9,8 +9,8 @@ function ButtonContainer() {
         <Button text={'Projects'}/>
       </div>
       <div className="button-row">
-        <Button text={'GitHub'} external/>
-        <Button text={'LinkedIn'} external/>
+        <Button link={'https://github.com/jakubstetz'} text={'GitHub'} external/>
+        <Button text={'LinkedIn'} link={'https://www.linkedin.com/in/jakub-stetz/'} external/>
       </div>
     </div>
   );
