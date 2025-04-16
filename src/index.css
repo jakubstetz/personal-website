@@ -58,6 +58,13 @@ h1 {/* Website title (my name) in the website header. */
   font-family: Garamond, 'Times New Roman', serif;
 }
 
+#intro-text {
+  margin: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 #button-container {
   background-color: #bbbbbb; /* darker gray */
   display: flex;
