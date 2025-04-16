@@ -74,16 +74,18 @@
   font-style: italic;
 }
 
-/*** Load Montserrat Font Family ***/
+/*** Load Inter Font Family ***/
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('./inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
-  font-style: italic;
+  font-family: 'Inter';
+  src: url('./inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }

@@ -1,5 +1,5 @@
 :root {
-  font-family: Montserrat, 'Trebuchet MS', Arial, sans-serif;
+  font-family: Inter, 'Trebuchet MS', Arial, sans-serif;
   background-color: white
 }
 
@@ -53,7 +53,7 @@ h1 {/* Website title (my name) in the website header. */
   border-bottom: black solid .125rem;
   padding-bottom: .125rem;
   letter-spacing: .1875rem;
-  font-weight: 550;
+  font-weight: 600;
   font-family: Garamond, 'Times New Roman', serif;
 }
 
