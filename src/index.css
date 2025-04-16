@@ -22,15 +22,14 @@ html, body {
   background-color: #f8f8f8; /* very light gray */
   padding: 40px;
   border-radius: 10px;
-  height: 60%;
+  gap: 1.5rem;
   width: 70%;
 }
 
-#portrait-container {
-  background-color: #eaeaea; /* light gray */
-  width: 30%;
-  height: 100%;
-  border-radius: 10px;
+#hero-banner .image-container { /* Container for my headshot in the website header. */
+  border-radius: 50%;
+  min-width: 190px;
+  max-width: 300px;
 }
 
 #banner-text-container {
