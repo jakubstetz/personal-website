@@ -41,7 +41,7 @@ div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 680px;
+  max-width: 570px;
   border-radius: 10px;
   padding: 20px;
   min-width: 540px; /* Ensures text doesn't break into three lines. */
