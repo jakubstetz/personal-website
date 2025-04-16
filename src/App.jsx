@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <HeroBanner />
+      <Break />
       <Body />
       <Footer />
     </>
