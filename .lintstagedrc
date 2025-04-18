@@ -1,0 +1,7 @@
+{
+  "**/*.{js,jsx}": [
+    "npm run lint",
+    "npm run format"
+  ],
+  "**/*.{html,css,json,md,yaml,toml}": "npm run format"
+}
