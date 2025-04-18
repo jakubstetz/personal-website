@@ -1,9 +1,10 @@
 :root {
-  font-family: Inter, 'Trebuchet MS', Arial, sans-serif;
-  background-color: white
+  font-family: Inter, "Trebuchet MS", Arial, sans-serif;
+  background-color: white;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -35,7 +36,8 @@ div {
   max-width: 950px;
 }
 
-#hero-banner .image-container { /* Container for my headshot in the website header. */
+#hero-banner .image-container {
+  /* Container for my headshot in the website header. */
   border-radius: 50%;
   min-width: 220px;
   max-width: 250px;
@@ -48,13 +50,14 @@ div {
   justify-content: space-between;
 }
 
-h1 {/* Website title (my name) in the website header. */
+h1 {
+  /* Website title (my name) in the website header. */
   font-size: 3rem;
-  border-bottom: black solid .125rem;
-  padding-bottom: .125rem;
-  letter-spacing: .125rem;
+  border-bottom: black solid 0.125rem;
+  padding-bottom: 0.125rem;
+  letter-spacing: 0.125rem;
   font-weight: 500;
-  font-family: Garamond, 'Times New Roman', serif;
+  font-family: Garamond, "Times New Roman", serif;
 }
 
 #intro-text {
@@ -112,5 +115,7 @@ h1 {/* Website title (my name) in the website header. */
 .button:active {
   transform: scale(0.98);
   box-shadow: none;
-  transition: transform 0s, box-shadow 0s;
+  transition:
+    transform 0s,
+    box-shadow 0s;
 }
