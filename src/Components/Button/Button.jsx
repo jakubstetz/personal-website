@@ -1,4 +1,4 @@
-function Button({text, link, icon, external}) {
+function Button({text, link}) {
   return link ? (
     <a href={link} className="button shadow">
       {text}
