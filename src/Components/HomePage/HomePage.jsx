@@ -1,7 +1,7 @@
 import PortraitContainer from "./PortraitContainer";
 import BannerTextContainer from "./BannerTextContainer";
 
-function FrontPage() {
+function HomePage() {
   return (
     <div id="front-page">
       <div id="hero-banner">
@@ -12,4 +12,4 @@ function FrontPage() {
   );
 }
 
-export default FrontPage;
+export default HomePage;
