@@ -1,5 +1,4 @@
-import "./ButtonContainer.css";
-import Button from "../Button/Button";
+import Button from "./Button";
 
 function ButtonContainer() {
   return (

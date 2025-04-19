@@ -1,6 +1,5 @@
-import "./FrontPage.css";
-import PortraitContainer from "../PortraitContainer/PortraitContainer";
-import BannerTextContainer from "../BannerTextContainer/BannerTextContainer";
+import PortraitContainer from "./PortraitContainer";
+import BannerTextContainer from "./BannerTextContainer";
 
 function FrontPage() {
   return (

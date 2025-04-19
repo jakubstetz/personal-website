@@ -1,4 +1,4 @@
-import FrontPage from "./Components/FrontPage/FrontPage";
+import FrontPage from "./Components/HomePage/FrontPage";
 
 function App() {
   return (

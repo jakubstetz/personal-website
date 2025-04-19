@@ -1,5 +1,4 @@
-import "./BannerTextContainer.css";
-import ButtonContainer from "../ButtonContainer/ButtonContainer";
+import ButtonContainer from "./ButtonContainer";
 
 function BannerTextContainer() {
   return (
