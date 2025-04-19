@@ -1,10 +1,8 @@
-function Button({ text, link }) {
-  return link ? (
-    <a href={link} className="button shadow">
+function Button({ text, clickHandler }) {
+  return (
+    <button onClick={clickHandler} className="button shadow">
       {text}
-    </a>
-  ) : (
-    <button className="button shadow">{text}</button>
+    </button>
   );
 }
 

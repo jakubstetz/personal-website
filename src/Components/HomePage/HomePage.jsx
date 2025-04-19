@@ -1,12 +1,12 @@
 import PortraitContainer from "./PortraitContainer";
 import BannerTextContainer from "./BannerTextContainer";
 
-function HomePage() {
+function HomePage({ setView }) {
   return (
     <div id="front-page">
       <div id="hero-banner">
         <PortraitContainer />
-        <BannerTextContainer />
+        <BannerTextContainer setView={setView} />
       </div>
     </div>
   );
