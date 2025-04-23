@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, "Trebuchet MS", Arial, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
   background-color: white;
 }
 
@@ -124,4 +124,43 @@ h1 {
 .section {
   height: 100vh;
   width: 100vw;
+}
+
+.subtle-heading {
+  font-size: 2.1rem;
+  font-family: Garamond, serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.85;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* wider gap */
+  padding: 20px 0 16px;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link.current {
+  cursor: default;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-link.current:hover {
+  color: black;
+}
+
+.nav-link:hover {
+  color: gray;
 }
