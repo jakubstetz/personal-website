@@ -5,10 +5,16 @@ import AboutSection from "./Components/AboutSection/AboutSection";
 import Navbar from "./Components/NavBar";
 import projects from "./data/projectData";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [view, setView] = useState("HomePage");
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setReady(true), 500);
+    return () => clearTimeout(timeout);
+  }, []);
 
   // Configs used for motion orchestration
   const fadeDuration = 0.7; // In seconds
@@ -50,7 +56,7 @@ function App() {
           <Navbar setView={setView} currentView={view} />
         </motion.div>
       )}
-      {view === "HomePage" && (
+      {view === "HomePage" && ready && (
         <motion.div
           key="home"
           initial={{ opacity: 0 }}
