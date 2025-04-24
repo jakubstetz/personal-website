@@ -1,7 +1,6 @@
-import "./BannerTextContainer.css";
-import ButtonContainer from "../ButtonContainer/ButtonContainer";
+import ButtonContainer from "./ButtonContainer";
 
-function BannerTextContainer() {
+function BannerTextContainer({ setView }) {
   return (
     <div id="banner-text-container">
       <h1 className="centered-text">Hugo Jakub Stetz</h1>
@@ -12,7 +11,7 @@ function BannerTextContainer() {
         </p>
         <p>Welcome to my website.</p>
       </div>
-      <ButtonContainer />
+      <ButtonContainer setView={setView} />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, "Trebuchet MS", Arial, sans-serif;
+  font-family: "Trebuchet MS", Arial, sans-serif;
   background-color: white;
 }
 
@@ -40,7 +40,8 @@ div {
   /* Container for my headshot in the website header. */
   border-radius: 50%;
   min-width: 220px;
-  max-width: 250px;
+  width: 250px;
+  flex-grow: 0;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -58,6 +59,7 @@ h1 {
   letter-spacing: 0.125rem;
   font-weight: 500;
   font-family: Garamond, "Times New Roman", serif;
+  text-align: center;
 }
 
 #intro-text {
@@ -118,4 +120,61 @@ h1 {
   transition:
     transform 0s,
     box-shadow 0s;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.subtle-heading {
+  font-size: 1.8rem; /* slightly smaller */
+  font-family: Garamond, serif;
+  font-weight: 400; /* reduce weight for a lighter touch */
+  text-align: center;
+  margin-top: 14px;
+  opacity: 0.75; /* dialed-down emphasis */
+  letter-spacing: 0.02em;
+}
+
+.section-header {
+  font-family: Garamond, serif;
+  font-size: 2rem;
+  font-weight: 550; /* stronger presence */
+  text-align: center;
+  margin: 40px 30% 0;
+  opacity: 0.95;
+  letter-spacing: 0.06em;
+  border-bottom: 1.5px solid black;
+  padding-bottom: 4px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* wider gap */
+  padding: 20px 0 16px;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.nav-link {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link.current {
+  cursor: default;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-link.current:hover {
+  color: black;
+}
+
+.nav-link:hover {
+  color: gray;
 }

@@ -1,4 +1,3 @@
-import "./PortraitContainer.css";
 import portrait from "../../assets/images/portrait.jpg";
 
 function PortraitContainer() {
