@@ -40,7 +40,8 @@ div {
   /* Container for my headshot in the website header. */
   border-radius: 50%;
   min-width: 220px;
-  max-width: 250px;
+  width: 250px;
+  flex-grow: 0;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
 }
 
