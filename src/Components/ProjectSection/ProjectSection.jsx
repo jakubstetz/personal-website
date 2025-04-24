@@ -1,16 +1,91 @@
+import { motion } from "motion/react";
 import "./ProjectSection.css";
 import ProjectTile from "./ProjectTile";
 import projects from "../../data/projectData";
 
-function ProjectSection() {
+function ProjectSection({
+  projectsOrchestration: {
+    singleTileFadeDuration,
+    tileFadeStagger,
+    totalTileExitTime,
+  },
+}) {
+  // motion.div configs
+  const fadeContainer = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.5, // ✨ small delay after section mounts
+        staggerChildren: tileFadeStagger, // ✨ more time between tiles
+      },
+    },
+    exit: {
+      transition: {
+        staggerDirection: 1, // ➡️ fade out left to right
+        staggerChildren: tileFadeStagger,
+      },
+    },
+  };
+
+  const fadeItem = {
+    initial: { opacity: 0, y: 14 }, // 🎈 slight rise
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: singleTileFadeDuration, // 🪶 gentle fade
+        ease: [0.25, 0.1, 0.25, 1], // 🌊 soft landing
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -14,
+      transition: {
+        duration: singleTileFadeDuration,
+        ease: "easeIn",
+      },
+    },
+  };
+
+  const headerExit = {
+    opacity: 0,
+    transition: {
+      duration: 0.6,
+      delay: totalTileExitTime - singleTileFadeDuration + 0.1,
+      ease: "easeIn",
+    },
+  };
+
   return (
     <>
-      <h2 className="section-header">Projects</h2>
-      <div id="project-section">
+      <motion.h2
+        className="section-header"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={headerExit}
+        transition={{
+          delay: 0.3,
+          duration: 1.4,
+          ease: "easeOut",
+        }}
+      >
+        Projects
+      </motion.h2>
+
+      <motion.div
+        id="project-section"
+        variants={fadeContainer}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
         {projects.map((project, idx) => (
-          <ProjectTile key={idx} {...project} />
+          <motion.div key={idx} variants={fadeItem}>
+            <ProjectTile {...project} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </>
   );
 }
