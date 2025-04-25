@@ -71,21 +71,23 @@ function AboutSection() {
               and nuance. Feel free to connect.
             </p>
 
-            <div className="contact-link">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <p>jakub@jakubstetz.dev</p>
-            </div>
-            <div className="contact-link">
-              <FontAwesomeIcon icon={faLinkedin} />
-              <p>linkedin.com/in/jakub-stetz/</p>
-            </div>
-            <div className="contact-link">
-              <FontAwesomeIcon icon={faGithub} />
-              <p>github.com/jakubstetz</p>
-            </div>
-            <div className="contact-link">
-              <FontAwesomeIcon icon={faDev} />
-              <p>https://dev.to/jakubstetz</p>
+            <div id="contact-links">
+              <div className="contact-link">
+                <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
+                <p>jakub@jakubstetz.dev</p>
+              </div>
+              <div className="contact-link">
+                <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
+                <p>linkedin.com/in/jakub-stetz/</p>
+              </div>
+              <div className="contact-link">
+                <FontAwesomeIcon icon={faGithub} className="contact-icon" />
+                <p>github.com/jakubstetz</p>
+              </div>
+              <div className="contact-link">
+                <FontAwesomeIcon icon={faDev} className="contact-icon" />
+                <p>https://dev.to/jakubstetz</p>
+              </div>
             </div>
           </div>
 
