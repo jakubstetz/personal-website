@@ -66,6 +66,10 @@ function AboutSection() {
               user interface — crafting thoughtful, elegant frontends like the
               one you're navigating now.
             </p>
+            <p>
+              I'm always interested to meet new people who have vision, depth,
+              and nuance. Feel free to connect.
+            </p>
 
             <div className="contact-link">
               <FontAwesomeIcon icon={faEnvelope} />
