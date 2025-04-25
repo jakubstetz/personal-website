@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 archive
 dev_journal
+
+# Full-size images
+raw
