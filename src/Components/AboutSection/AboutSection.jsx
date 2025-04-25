@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./AboutSection.css";
 
 function AboutSection() {
@@ -52,6 +53,22 @@ function AboutSection() {
           I'm always interested to meet new people who have vision, depth, and
           nuance. Feel free to connect.
         </p>
+        <div className="contact-link">
+          <FontAwesomeIcon />
+          <p>jakub@jakubstetz.dev</p>
+        </div>
+        <div className="contact-link">
+          <FontAwesomeIcon />
+          <p>github.com/jakubstetz</p>
+        </div>
+        <div className="contact-link">
+          <FontAwesomeIcon />
+          <p>linkedin.com/in/jakub-stetz/</p>
+        </div>
+        <div className="contact-link">
+          <FontAwesomeIcon />
+          <p>https://dev.to/jakubstetz</p>
+        </div>
       </div>
     </>
   );
