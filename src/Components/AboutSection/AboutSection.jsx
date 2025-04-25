@@ -1,5 +1,11 @@
 import { motion } from "motion/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faDev,
+} from "@fortawesome/free-brands-svg-icons";
 import "./AboutSection.css";
 
 function AboutSection() {
@@ -54,19 +60,19 @@ function AboutSection() {
           nuance. Feel free to connect.
         </p>
         <div className="contact-link">
-          <FontAwesomeIcon />
+          <FontAwesomeIcon icon={faEnvelope} />
           <p>jakub@jakubstetz.dev</p>
         </div>
         <div className="contact-link">
-          <FontAwesomeIcon />
+          <FontAwesomeIcon icon={faGithub} />
           <p>github.com/jakubstetz</p>
         </div>
         <div className="contact-link">
-          <FontAwesomeIcon />
+          <FontAwesomeIcon icon={faLinkedin} />
           <p>linkedin.com/in/jakub-stetz/</p>
         </div>
         <div className="contact-link">
-          <FontAwesomeIcon />
+          <FontAwesomeIcon icon={faDev} />
           <p>https://dev.to/jakubstetz</p>
         </div>
       </div>
