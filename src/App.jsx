@@ -29,6 +29,15 @@ function App() {
       projectsOrchestration.tileFadeStagger +
     projectsOrchestration.singleTileFadeDuration;
 
+  const aboutExitTime = 0.3; // About section's exit duration (match AboutSection.jsx)
+
+  const navbarExitDelay =
+    view === "Projects"
+      ? projectsOrchestration.totalTileExitTime -
+        projectsOrchestration.singleTileFadeDuration +
+        0.4
+      : aboutExitTime; // About section + small grace period
+
   return (
     <AnimatePresence mode="wait">
       {view !== "HomePage" && (
@@ -45,10 +54,7 @@ function App() {
             opacity: 0,
             transition: {
               duration: 0.6,
-              delay:
-                projectsOrchestration.totalTileExitTime -
-                projectsOrchestration.singleTileFadeDuration +
-                0.4, // ⏳ exits after tiles and header
+              delay: navbarExitDelay, // ⏳ exits after tiles and header
               ease: "easeIn",
             },
           }}
