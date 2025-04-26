@@ -82,7 +82,7 @@ function AboutSection() {
               </div>
               <div className="contact-link">
                 <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
-                <p>linkedin.com/in/jakub-stetz/</p>
+                <p>linkedin.com/in/jakub-stetz</p>
               </div>
               <div className="contact-link">
                 <FontAwesomeIcon icon={faGithub} className="contact-icon" />
