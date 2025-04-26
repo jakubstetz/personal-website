@@ -16,14 +16,14 @@ function ProjectSection({
     animate: {
       opacity: 1,
       transition: {
-        delayChildren: 0.5, // ✨ small delay after section mounts
+        delayChildren: 0.7, // ✨ small delay after section mounts
         staggerChildren: tileFadeStagger, // ✨ more time between tiles
       },
     },
     exit: {
       transition: {
         staggerDirection: 1, // ➡️ fade out left to right
-        staggerChildren: tileFadeStagger,
+        staggerChildren: tileFadeStagger - 0.05,
       },
     },
   };
@@ -40,7 +40,7 @@ function ProjectSection({
     },
     exit: {
       opacity: 0,
-      y: -14,
+      y: -16,
       transition: {
         duration: singleTileFadeDuration,
         ease: "easeIn",
@@ -51,8 +51,8 @@ function ProjectSection({
   const headerExit = {
     opacity: 0,
     transition: {
-      duration: 0.6,
-      delay: totalTileExitTime - singleTileFadeDuration + 0.1,
+      duration: 0.7,
+      delay: totalTileExitTime - singleTileFadeDuration - 0.2,
       ease: "easeIn",
     },
   };
@@ -65,7 +65,7 @@ function ProjectSection({
         animate={{ opacity: 1 }}
         exit={headerExit}
         transition={{
-          delay: 0.3,
+          delay: 0.65,
           duration: 1.4,
           ease: "easeOut",
         }}

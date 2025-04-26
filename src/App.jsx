@@ -17,11 +17,9 @@ function App() {
   }, []);
 
   // Configs used for motion orchestration
-  const fadeDuration = 0.7; // In seconds
-
   const projectsOrchestration = {
-    singleTileFadeDuration: 0.9,
-    tileFadeStagger: 0.3, // Stagger time between starting tile animations
+    singleTileFadeDuration: 0.8,
+    tileFadeStagger: 0.25, // Stagger time between starting tile animations
     tileCount: projects.length,
   };
   projectsOrchestration.totalTileExitTime =
@@ -29,14 +27,13 @@ function App() {
       projectsOrchestration.tileFadeStagger +
     projectsOrchestration.singleTileFadeDuration;
 
-  const aboutExitTime = 0.3; // About section's exit duration (match AboutSection.jsx)
+  const aboutExitTime = 0.25;
 
   const navbarExitDelay =
     view === "Projects"
       ? projectsOrchestration.totalTileExitTime -
-        projectsOrchestration.singleTileFadeDuration +
-        0.4
-      : aboutExitTime; // About section + small grace period
+        projectsOrchestration.singleTileFadeDuration
+      : aboutExitTime;
 
   return (
     <AnimatePresence mode="wait">
@@ -47,13 +44,13 @@ function App() {
           animate={{ opacity: 1 }}
           transition={{
             duration: 1.0,
-            delay: 0.1, // ✅ starts first
-            ease: "easeOut",
+            delay: 0.3, // ✅ starts first
+            ease: [0.45, 0, 0.55, 1],
           }}
           exit={{
             opacity: 0,
             transition: {
-              duration: 0.6,
+              duration: 0.7,
               delay: navbarExitDelay, // ⏳ exits after tiles and header
               ease: "easeIn",
             },
@@ -67,8 +64,17 @@ function App() {
           key="home"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: fadeDuration }}
+          exit={{
+            opacity: 0,
+            transition: {
+              duration: 0.5, // ✨ faster exit
+              ease: "easeOut", // ✨ swift ease
+            },
+          }}
+          transition={{
+            duration: 0.7,
+            delay: 0.2,
+          }}
         >
           <HomePage setView={setView} />
         </motion.div>

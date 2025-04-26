@@ -16,6 +16,7 @@ function AboutSection() {
       opacity: 1,
       y: 0,
       transition: {
+        delay: 0.2,
         delayChildren: 0.4, // 🌱 slight delay before child elements
         staggerChildren: 0.3, // 🌿 stagger child fade-ins
         duration: 1.2,
@@ -40,8 +41,8 @@ function AboutSection() {
         animate={{
           opacity: 1,
           transition: {
-            delay: 0.3,
-            duration: 1.4, // 🌿 slow, luxurious entrance
+            delay: 0.55,
+            duration: 1.5, // 🌿 slow, luxurious entrance
             ease: "easeOut",
           },
         }}
