@@ -37,11 +37,20 @@ function AboutSection() {
       <motion.h2
         className="section-header"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          delay: 0.3,
-          duration: 1.4,
-          ease: "easeOut",
+        animate={{
+          opacity: 1,
+          transition: {
+            delay: 0.3,
+            duration: 1.4, // 🌿 slow, luxurious entrance
+            ease: "easeOut",
+          },
+        }}
+        exit={{
+          opacity: 0,
+          transition: {
+            duration: 0.7, // 🚀 quicker, more efficient exit
+            ease: "easeIn",
+          },
         }}
       >
         About Me

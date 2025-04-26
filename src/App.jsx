@@ -73,21 +73,9 @@ function App() {
           <HomePage setView={setView} />
         </motion.div>
       )}
-      {view === "AboutMe" && (
-        <motion.div
-          key="about"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: fadeDuration }}
-        >
-          <AboutSection />
-        </motion.div>
-      )}
+      {view === "AboutMe" && <AboutSection />}
       {view === "Projects" && (
-        <motion.div key="projects">
-          <ProjectSection projectsOrchestration={projectsOrchestration} />
-        </motion.div>
+        <ProjectSection projectsOrchestration={projectsOrchestration} />
       )}
     </AnimatePresence>
   );
