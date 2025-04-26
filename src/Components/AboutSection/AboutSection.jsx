@@ -10,6 +10,28 @@ import "./AboutSection.css";
 import portraitLarge from "../../assets/images/portrait-large.jpeg";
 
 function AboutSection() {
+  const aboutContainer = {
+    initial: { opacity: 0, y: 24 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delayChildren: 0.4, // 🌱 slight delay before child elements
+        staggerChildren: 0.3, // 🌿 stagger child fade-ins
+        duration: 1.2,
+        ease: [0.25, 0.1, 0.25, 1], // 🪶 smooth
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -12,
+      transition: {
+        duration: 0.8,
+        ease: "easeIn",
+      },
+    },
+  };
+
   return (
     <>
       <motion.h2
@@ -24,7 +46,14 @@ function AboutSection() {
       >
         About Me
       </motion.h2>
-      <div id="about-section">
+
+      <motion.div
+        id="about-section"
+        variants={aboutContainer}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+      >
         <div id="about-block-1">
           <div className="about-text">
             <p>Polish immigrant.</p>
@@ -110,7 +139,7 @@ function AboutSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
