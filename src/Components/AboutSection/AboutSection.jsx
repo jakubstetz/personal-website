@@ -24,14 +24,17 @@ function AboutSection() {
         About Me
       </motion.h2>
       <div id="about-section">
-        <div className="about-block">
+        <div id="about-block-1">
           <div className="about-text">
             <p>Polish immigrant.</p>
             <p>US Navy veteran.</p>
             <p>Former monk.</p>
             <p>Transformational facilitator.</p>
             <p>Software engineer.</p>
-            <p>These are the identities that form the person I am today.</p>
+            <div className="paragraph-empty-line"></div>
+            <p id="identities-conclusion">
+              These are the identities that form the person I am today.
+            </p>
           </div>
           <div className="about-image">
             <img src="your_first_image_path_here" alt="Jakub portrait" />
@@ -40,7 +43,7 @@ function AboutSection() {
 
         <div className="text-divider"></div>
 
-        <div className="about-block" style={{ flexDirection: "row-reverse" }}>
+        <div id="about-block-2">
           <div className="about-text">
             <p>I like to understand things — deeply.</p>
             <p>How they work. Why they matter. What they could become.</p>
@@ -89,10 +92,6 @@ function AboutSection() {
                 <p>https://dev.to/jakubstetz</p>
               </div>
             </div>
-          </div>
-
-          <div className="about-image">
-            <img src="your_second_image_path_here" alt="Jakub second" />
           </div>
         </div>
       </div>
