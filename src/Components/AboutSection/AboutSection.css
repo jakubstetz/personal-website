@@ -90,6 +90,11 @@
   line-height: 1.4;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .contact-link > p {
   margin: 0;
 }

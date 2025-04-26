@@ -76,22 +76,37 @@ function AboutSection() {
             </p>
 
             <div id="contact-links">
-              <div className="contact-link">
+              <a className="contact-link" href="mailto:jakub@jakubstetz.dev">
                 <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
                 <p>jakub@jakubstetz.dev</p>
-              </div>
-              <div className="contact-link">
+              </a>
+              <a
+                className="contact-link"
+                href="https://linkedin.com/in/jakub-stetz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faLinkedin} className="contact-icon" />
                 <p>linkedin.com/in/jakub-stetz</p>
-              </div>
-              <div className="contact-link">
+              </a>
+              <a
+                className="contact-link"
+                href="https://github.com/jakubstetz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faGithub} className="contact-icon" />
                 <p>github.com/jakubstetz</p>
-              </div>
-              <div className="contact-link">
+              </a>
+              <a
+                className="contact-link"
+                href="https://dev.to/jakubstetz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faDev} className="contact-icon" />
-                <p>https://dev.to/jakubstetz</p>
-              </div>
+                <p>dev.to/jakubstetz</p>
+              </a>
             </div>
           </div>
         </div>
