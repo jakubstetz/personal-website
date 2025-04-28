@@ -36,60 +36,64 @@ function App() {
       : aboutExitTime;
 
   return (
-    <AnimatePresence mode="wait">
-      {view !== "HomePage" && (
-        <motion.div
-          key="navbar"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 1.0,
-            delay: 0.3, // ✅ starts first
-            ease: [0.45, 0, 0.55, 1],
-          }}
-          exit={{
-            opacity: 0,
-            transition: {
+    <>
+      <AnimatePresence mode="wait">
+        {view !== "HomePage" && (
+          <motion.div
+            key="navbar"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1.0,
+              delay: 0.3, // ✅ starts first
+              ease: [0.45, 0, 0.55, 1],
+            }}
+            exit={{
+              opacity: 0,
+              transition: {
+                duration: 0.7,
+                delay: navbarExitDelay, // ⏳ exits after tiles and header
+                ease: "easeIn",
+              },
+            }}
+          >
+            <Navbar setView={setView} currentView={view} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence mode="wait">
+        {view === "HomePage" && ready && (
+          <motion.div
+            key="home"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{
+              opacity: 0,
+              transition: {
+                duration: 0.5, // ✨ faster exit
+                ease: "easeOut", // ✨ swift ease
+              },
+            }}
+            transition={{
               duration: 0.7,
-              delay: navbarExitDelay, // ⏳ exits after tiles and header
-              ease: "easeIn",
-            },
-          }}
-        >
-          <Navbar setView={setView} currentView={view} />
-        </motion.div>
-      )}
-      {view === "HomePage" && ready && (
-        <motion.div
-          key="home"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{
-            opacity: 0,
-            transition: {
-              duration: 0.5, // ✨ faster exit
-              ease: "easeOut", // ✨ swift ease
-            },
-          }}
-          transition={{
-            duration: 0.7,
-            delay: 0.2,
-          }}
-        >
-          <HomePage setView={setView} />
-        </motion.div>
-      )}
-      {view === "AboutMe" && (
-        <motion.div key="about">
-          <AboutSection />
-        </motion.div>
-      )}
-      {view === "Projects" && (
-        <motion.div key="projects">
-          <ProjectSection projectsOrchestration={projectsOrchestration} />
-        </motion.div>
-      )}
-    </AnimatePresence>
+              delay: 0.2,
+            }}
+          >
+            <HomePage setView={setView} />
+          </motion.div>
+        )}
+        {view === "AboutMe" && (
+          <motion.div key="about">
+            <AboutSection />
+          </motion.div>
+        )}
+        {view === "Projects" && (
+          <motion.div key="projects">
+            <ProjectSection projectsOrchestration={projectsOrchestration} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
 

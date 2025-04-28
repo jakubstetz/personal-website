@@ -49,7 +49,7 @@ function AboutSection() {
         exit={{
           opacity: 0,
           transition: {
-            duration: 0.7, // 🚀 quicker, more efficient exit
+            duration: 0.65, // 🚀 quicker, more efficient exit
             ease: "easeIn",
           },
         }}

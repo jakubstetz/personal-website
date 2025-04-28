@@ -21,6 +21,8 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute; /* Keeps homepage centered when fading out on transition to Projects/About sections */
+  top: 0;
 }
 
 #hero-banner {
