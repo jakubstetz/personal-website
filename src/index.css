@@ -167,7 +167,8 @@ h1 {
   transition: all 0.5s ease;
   text-decoration: underline;
   text-underline-offset: 8px;
-  text-decoration-color: rgba(0, 0, 0, 0);
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
 }
 
 .nav-link:hover:not(.current) {
@@ -179,5 +180,5 @@ h1 {
   cursor: default;
   transform: translateY(-2px);
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-  text-decoration-color: rgba(0, 0, 0, 0.2);
+  text-decoration-color: black;
 }
