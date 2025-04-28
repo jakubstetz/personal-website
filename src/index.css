@@ -21,6 +21,8 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute; /* Keeps homepage centered when fading out on transition to Projects/About sections */
+  top: 0;
 }
 
 #hero-banner {
@@ -160,21 +162,23 @@ h1 {
 }
 
 .nav-link {
+  position: relative;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.5s ease;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-color: white;
+  text-decoration-thickness: 1px;
+}
+
+.nav-link:hover:not(.current) {
+  color: gray;
+  transform: scale(1.05);
 }
 
 .nav-link.current {
   cursor: default;
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.nav-link.current:hover {
-  color: black;
-}
-
-.nav-link:hover {
-  color: gray;
+  transform: translateY(-2px);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  text-decoration-color: black;
 }

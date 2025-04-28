@@ -16,7 +16,7 @@ function ProjectSection({
     animate: {
       opacity: 1,
       transition: {
-        delayChildren: 0.7, // ✨ small delay after section mounts
+        delayChildren: 0.3, // ✨ small delay after section mounts
         staggerChildren: tileFadeStagger, // ✨ more time between tiles
       },
     },
@@ -65,7 +65,7 @@ function ProjectSection({
         animate={{ opacity: 1 }}
         exit={headerExit}
         transition={{
-          delay: 0.65,
+          delay: 0.25,
           duration: 1.4,
           ease: "easeOut",
         }}
