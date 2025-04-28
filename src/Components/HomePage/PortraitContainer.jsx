@@ -1,4 +1,4 @@
-import portrait from "../../assets/images/portrait.jpg";
+import portrait from "../../assets/images/portrait.jpeg";
 
 function PortraitContainer() {
   return (
