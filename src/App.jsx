@@ -79,9 +79,15 @@ function App() {
           <HomePage setView={setView} />
         </motion.div>
       )}
-      {view === "AboutMe" && <AboutSection />}
+      {view === "AboutMe" && (
+        <motion.div key="about">
+          <AboutSection />
+        </motion.div>
+      )}
       {view === "Projects" && (
-        <ProjectSection projectsOrchestration={projectsOrchestration} />
+        <motion.div key="projects">
+          <ProjectSection projectsOrchestration={projectsOrchestration} />
+        </motion.div>
       )}
     </AnimatePresence>
   );
