@@ -1,8 +1,8 @@
 const projects = [
   {
-    title: "AI Resume Scanner",
+    title: "AI Résumé Scanner",
     description:
-      "Uses NLP to analyze job descriptions and resumes for alignment. Built with Hugging Face models and FastAPI.",
+      "Analyzes résumés against job descriptions using natural language processing. Built with Hugging Face models and FastAPI, deployed with full Dockerized infrastructure on AWS.",
     screenshotFilename: "resume-scanner.jpeg",
     repoLink: "https://github.com/jakubstetz/resume-scanner",
     demoLink: "https://resume-scanner.jakubstetz.dev",
@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Portfolio Insights",
     description:
-      "Monitors stock prices and alerts users via thresholds and triggers. Designed with a focus on backend deployment and automation.",
+      "Stock monitoring platform built with PostgreSQL, FastAPI, and React, containerized with Docker, deployed on AWS. Focused on backend development, automation, and cloud architecture.",
     screenshotFilename: "portfolio-insights.jpeg",
     repoLink: "https://github.com/jakubstetz/portfolio-insights",
     demoLink: "https://portfolio-insights.jakubstetz.dev",
@@ -20,11 +20,11 @@ const projects = [
   {
     title: "Personal Portfolio Website",
     description:
-      "A minimal, animated single-page portfolio built with React and custom CSS to showcase projects and career background.",
+      "Single-page portfolio site for showcasing projects, background, and contact information. Built with React, styled with custom CSS, and animated with Motion",
     screenshotFilename: "jakubstetz-dev.jpeg",
     repoLink: "https://github.com/jakubstetz/personal-website",
     demoLink: "https://jakubstetz.dev",
-    tech: ["React", "JavaScript", "CSS", "Framer Motion", "Netlify"],
+    tech: ["React", "JavaScript", "CSS", "Motion", "Netlify"],
   },
 ];
 
