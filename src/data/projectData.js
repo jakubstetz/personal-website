@@ -14,7 +14,7 @@ const projects = [
       "Monitors stock prices and alerts users via thresholds and triggers. Designed with a focus on backend deployment and automation.",
     screenshotFilename: "portfolio-insights.jpeg",
     repoLink: "https://github.com/jakubstetz/portfolio-insights",
-    demoLink: "https://portfolioinsights.jakubstetz.dev",
+    demoLink: "https://portfolio-insights.jakubstetz.dev",
     tech: ["FastAPI", "PostgreSQL", "Docker", "AWS", "CI/CD"],
   },
   {
