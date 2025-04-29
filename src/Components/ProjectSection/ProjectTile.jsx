@@ -16,14 +16,8 @@ function ProjectTile({
       <p>{description}</p>
       <img src={imageSource} />
       <div className="button-row">
-        <Button
-          text={"GitHub"}
-          clickHandler={() => (window.location.href = repoLink)}
-        />
-        <Button
-          text={"Demo"}
-          clickHandler={() => (window.location.href = demoLink)}
-        />
+        <Button text={"GitHub"} href={repoLink} />
+        <Button text={"Demo"} href={demoLink} />
       </div>
     </div>
   );
