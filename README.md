@@ -1,11 +1,22 @@
-# Hugo Jakub Stetz - Personal Website
+# Hugo Jakub Stetz – Personal Website
 
-This project constitutes my personal website. It is where I get to build my personal website and thus simultaneously create my own promotional/informational material and also practice frontend development.
+This project is the source code for my personal website [jakubstetz.dev](https://jakubstetz.dev).  
+It serves as a personal introduction, a portfolio for my software projects, and a point of contact.
 
-Purposes of the website:
+## Purposes
 
-- Serve as my first impression to someone connecting with me.
-- Introduce me.
-- Serve as a portfolio for my various software projects.
+- Create a strong first impression for visitors and connections.
+- Introduce my background and professional focus.
+- Showcase selected software development projects.
 
-This website is built using React, and takes a lot of help from the `motion` library.
+## Technologies Used
+
+- **React** — frontend framework
+- **Framer Motion** — animations and transitions
+- **Custom CSS** — styling and layout
+- **Vite** — project bundling and development server
+- **Netlify** — hosting and deployment
+
+---
+
+_Deployed at [jakubstetz.dev](https://jakubstetz.dev)._
