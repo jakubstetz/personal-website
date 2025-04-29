@@ -8,10 +8,7 @@ function ProjectTile({
   repoLink,
   demoLink,
 }) {
-  const imageSource = new URL(
-    `../../assets/images/project-screenshots/${screenshotFilename}`,
-    import.meta.url,
-  ).href;
+  const imageSource = `/images/project-screenshots/${screenshotFilename}`;
 
   return (
     <div className="project-tile">

@@ -7,7 +7,6 @@ import {
   faDev,
 } from "@fortawesome/free-brands-svg-icons";
 import "./AboutSection.css";
-import portraitLarge from "../../assets/images/portrait-large.jpeg";
 
 function AboutSection() {
   const aboutContainer = {
@@ -77,7 +76,7 @@ function AboutSection() {
             </p>
           </div>
           <div className="about-image">
-            <img src={portraitLarge} alt="Jakub portrait" />
+            <img src="/images/portrait-large.jpeg" alt="Jakub portrait" />
           </div>
         </div>
 
