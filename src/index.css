@@ -34,8 +34,8 @@ div {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   width: 70%;
-  min-width: 820px;
-  max-width: 950px;
+  min-width: 720px;
+  max-width: 880px;
 }
 
 #hero-banner .image-container {
@@ -95,7 +95,7 @@ h1 {
   color: black;
   text-decoration: none; /* For removing underline from <a> */
   height: 34px;
-  width: 150px;
+  width: 140px;
   border-radius: 13px;
   display: flex;
   justify-content: center;
@@ -181,4 +181,27 @@ h1 {
   transform: translateY(-2px);
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
   text-decoration-color: black;
+}
+
+@media (max-width: 1200px) {
+  #hero-banner {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  #hero-banner {
+    flex-wrap: wrap;
+    gap: 20px;
+    min-width: 460px;
+    margin: 0 20px;
+  }
+
+  #hero-banner .image-container {
+    width: 220px;
+  }
+
+  .button {
+    width: 125px;
+  }
 }
