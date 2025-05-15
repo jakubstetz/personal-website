@@ -85,21 +85,19 @@
 .contact-link {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
+  padding-right: 8px;
+  padding-left: 4px;
   font-size: 1.05rem;
   line-height: 1.4;
   text-decoration: none;
-  text-decoration-color: rgba(0, 0, 0, 0);
   color: black;
-  transition:
-    color 0.4s ease,
-    transform 0.4s ease,
-    text-decoration-color 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .contact-link:hover {
   color: gray; /* 🌿 subtle hover color */
-  transform: translateX(14px);
+  padding-left: 18px;
 }
 
 .contact-link > p {

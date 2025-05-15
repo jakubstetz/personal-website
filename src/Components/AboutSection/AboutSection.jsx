@@ -68,7 +68,7 @@ function AboutSection() {
             <p>Polish immigrant.</p>
             <p>US Navy veteran.</p>
             <p>Former monk.</p>
-            <p>Transformational facilitator.</p>
+            <p>Communication coach.</p>
             <p>Software engineer.</p>
             <div className="paragraph-empty-line"></div>
             <p id="identities-conclusion">
@@ -101,12 +101,12 @@ function AboutSection() {
               that lets ideas travel farther, faster, and with more impact.
             </p>
             <p>
-              As a developer, I work primarily with Python, FastAPI, PostgreSQL,
-              Docker, and AWS — building backend systems with an eye toward
-              data, scalability, and machine learning applications. I use React
-              to extend the precision and clarity of my backend systems into the
-              user interface — crafting thoughtful, elegant frontends like the
-              one you're navigating now.
+              As a developer, I work primarily with Python, Go, FastAPI,
+              PostgreSQL, Docker, and AWS — building backend systems with an eye
+              toward data, scalability, and machine learning applications. I use
+              React to extend the precision and clarity of my backend systems
+              into the user interface — crafting thoughtful, elegant frontends
+              like the one you're navigating now.
             </p>
             <p>
               I'm always interested to meet new people who have vision, depth,
