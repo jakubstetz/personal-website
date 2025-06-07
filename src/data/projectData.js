@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Personal Portfolio Website",
     description:
-      "Single-page portfolio site for showcasing projects, background, and contact information. Built with React, styled with vanilla CSS, and animated with Motion.",
+      "Portfolio site for showcasing projects, background, and contact information. Built with React, styled with vanilla CSS, and animated with Motion.",
     screenshotFilename: "jakubstetz-dev.jpeg",
     repoLink: "https://github.com/jakubstetz/personal-website",
     demoLink: "https://jakubstetz.dev",
