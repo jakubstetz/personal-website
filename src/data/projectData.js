@@ -13,7 +13,7 @@ const projects = [
     description:
       "Stock price monitoring and alert management platform built with PostgreSQL, Go, FastAPI, and React, containerized with Docker, deployed on AWS.",
     screenshotFilename: "portfolio-insights.jpeg",
-    repoLink: "https://github.com/jakubstetz/portfolio-insights",
+    repoLink: "https://github.com/portfolio-insights",
     demoLink: "https://portfolio-insights.jakubstetz.dev",
     tech: ["FastAPI", "PostgreSQL", "Docker", "AWS", "CI/CD"],
   },
