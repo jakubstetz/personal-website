@@ -63,4 +63,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #efefef; /* softer and closer to page bg */
+  border-radius: 13px; /* Match the button's border radius */
 }
