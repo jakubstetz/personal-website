@@ -16,8 +16,14 @@ function ProjectTile({
       <p>{description}</p>
       <img src={imageSource} />
       <div className="button-row">
-        <Button text={"GitHub"} href={repoLink} />
-        <Button text={"Demo"} href={demoLink} />
+        <div className="button-container">
+          {/* Only display GitHub button if a repo link is provided */}
+          {!!repoLink && <Button text={"GitHub"} href={repoLink} />}
+        </div>
+        <div className="button-container">
+          {/* Only display Demo button if a demo link is provided */}
+          {!!demoLink && <Button text={"Demo"} href={demoLink} />}
+        </div>
       </div>
     </div>
   );
