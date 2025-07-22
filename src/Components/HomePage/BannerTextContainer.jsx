@@ -7,7 +7,7 @@ function BannerTextContainer({ setView }) {
       <div id="intro-text">
         <p>
           Backend-focused software engineer, shaped by monastic living and the
-          US Navy's nuclear engineering program.
+          U.S. Navy's nuclear power program.
         </p>
         <p>Welcome to my website.</p>
       </div>

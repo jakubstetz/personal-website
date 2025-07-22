@@ -2,7 +2,7 @@ const projects = [
   {
     title: "AI Résumé Scanner",
     description:
-      "Analyzes résumés against job descriptions using natural language processing. Built with Hugging Face models and FastAPI, deployed with Dockerized backend on AWS.",
+      "Analyzes résumés against job descriptions using natural language processing. Built with Hugging Face models and FastAPI, deployed with a Dockerized backend on AWS.",
     screenshotFilename: "resume-scanner.jpeg",
     repoLink: "https://github.com/jakubstetz/resume-scanner",
     demoLink: "https://resume-scanner.jakubstetz.dev",
@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Portfolio Insights",
     description:
-      "Stock price monitoring and alert management platform built with PostgreSQL, Go, FastAPI, and React, containerized with Docker, deployed on AWS.",
+      "Stock price monitoring and alert management platform built with Python, Go, PostgreSQL, FastAPI, and React, containerized with Docker, deployed on AWS.",
     screenshotFilename: "portfolio-insights.jpeg",
     repoLink: "https://github.com/portfolio-insights",
     demoLink: "https://portfolio-insights.jakubstetz.dev",

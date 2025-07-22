@@ -65,10 +65,10 @@ function AboutSection() {
       >
         <div id="about-block-1">
           <div className="about-text">
-            <p>Polish immigrant.</p>
-            <p>US Navy veteran.</p>
+            <p>First-generation Polish immigrant.</p>
+            <p>U.S. Navy veteran.</p>
             <p>Former monk.</p>
-            <p>Communication coach.</p>
+            <p>Certified coach.</p>
             <p>Software engineer.</p>
             <div className="paragraph-empty-line"></div>
             <p id="identities-conclusion">
@@ -101,9 +101,9 @@ function AboutSection() {
               that lets ideas travel farther, faster, and with more impact.
             </p>
             <p>
-              As a developer, I work primarily with Python, Go, FastAPI,
-              PostgreSQL, Docker, and AWS — building backend systems with an eye
-              toward data, scalability, and machine learning applications. I use
+              As a developer, I build backend systems with Python, Go,
+              PostgreSQL, and AI/ML tools — and work with infrastructure using
+              AWS, Docker, Kubernetes, Terraform, and CI/CD pipelines. I use
               React to extend the precision and clarity of my backend systems
               into the user interface — crafting thoughtful, elegant frontends
               like the one you're navigating now.
